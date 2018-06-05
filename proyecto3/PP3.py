@@ -43,7 +43,7 @@ def animacion(label,x,y,hasta):
 ventana_principal=Tk()       
 
 #Se le agregan sus atributos
-ventana_principal.title("Monopoly")     
+ventana_principal.title("Battleship")     
 ventana_principal.geometry("1000x650+150+20")
 ventana_principal.resizable(0,0)
 ventana_principal.config(bg="#445a6d")
