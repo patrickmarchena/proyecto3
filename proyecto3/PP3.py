@@ -43,11 +43,11 @@ def animacion(label,x,y,hasta):
 ventana_principal=Tk()       
 
 #Se le agregan sus atributos
-ventana_principal.title("Monopoly")     
-ventana_principal.geometry("1000x650+150+20")
+ventana_principal.title("BattleShip")     
+ventana_principal.geometry("1200x680+55+10")
 ventana_principal.resizable(0,0)
 ventana_principal.config(bg="#445a6d")
-ventana_principal.attributes("-fullscreen",True)
+#ventana_principal.attributes("-fullscreen",True)
 
 #Todas las imagenes para trabajar la interfaz grafica
 img_titulo=PhotoImage(file="inicio/logo.png")
@@ -56,18 +56,18 @@ img_play=PhotoImage(file="imagenes_programa/play.png")
 img_musica=PhotoImage(file="imagenes_programa/suena.png")
 #logi de tituilo
 lbl_logo=Label(ventana_principal,image=img_titulo,bg="#445a6d")
-lbl_logo.place(x=320,y=500)
+lbl_logo.place(x=320,y=420)
 #botones de musica
 btn_sigue=Button(ventana_principal,image=img_musica,bg="#445a6d",bd=0,highlightthickness=0,activebackground="#445a6d",command=lambda:continuar())
 btn_sigue.place(x=5,y=20)
 btn_pausa=Button(ventana_principal,image=img_mute,bg="#445a6d",bd=0,highlightthickness=0,activebackground="#445a6d",command=lambda:pause())
 btn_pausa.place(x=5,y=120)
 btn_jugar=Button(ventana_principal,image=img_play,bg="#445a6d",bd=0,highlightthickness=0,activebackground="#445a6d")
-btn_jugar.place(x=600,y=450)
+btn_jugar.place(x=530,y=450)
 #play("laita.mp3")
 
 #----------------------------------------------
-animacion(lbl_logo,-20,15,500)
+animacion(lbl_logo,-20,15,420)
 ventana_principal.mainloop()
 
 
